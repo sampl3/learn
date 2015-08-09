@@ -1,18 +1,20 @@
-<html  ng-app controller='app'>
+<html  ng-app='app'>
     <head>
-        <title>{{title}}</title>        
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="style/main.css">
     </head>
     
     <body>
-        <div ui-view></div>
+        <my-header>header</my-header>
 
-        <h2>Home page</h2>
-        <pre>Congratulations, you found my home page!</pre>
-        {{5 + 2}}s
+        <ui-view></ui-view>
+
         
         <script src='components/angular/angular.min.js'></script>
         <script src='components/ui-router/release/angular-ui-router.min.js'></script>
         <script src="app.js"></script>
+        <script src="app.router.js"></script>
+        <script src="header.js"></script>
         
 
     </body>
