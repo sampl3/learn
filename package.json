@@ -12,6 +12,11 @@
     "gulp": "^3.9.0"
   },
   "devDependencies": {
-    "node": "0.0.0"
+    "node": "0.0.0",
+    "gulp": "~3.9.0",
+    "require-dir": "~0.3.0",
+    "less": "~2.5.1",
+    "gulp-shell": "~0.4.2",
+    "gulp-serve": "~1.0.0"
   }
 }
