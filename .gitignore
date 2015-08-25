@@ -1,3 +1,11 @@
-.idea/*
+**/*.iml
+
+## Directory-based project format:
+.idea/**/
+
+**/*.ipr
+*.iws
+
+
 app/components
 node_modules

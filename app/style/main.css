@@ -1,12 +1,128 @@
-html,body {
+html,body, * {
     margin:0;
     padding:0;
 }
 
-.header {
-    background-color:steelblue;
+body{
+    background-color: black;
     color:white;
+    font-size:1em;
+}
+
+button{
+    padding: 0 8px;
+    border:1px solid silver;
+    border-radius:20%;
+}
+
+
+.filters{
+    padding:0;
+    margin-bottom: 4px;
+    background-color: silver;
+    color:black;
+}
+.filters > *{
     margin:0;
-    padding: 8px 4px;
-    margin-bottom:6px;
+    padding:6px 0;
+    font-size: 0.7em;
+    text-align: center;
+    display:inline-block;
+    width: 28%;
+}
+.filters .selected{
+    font-weight: bold;
+    background-color: #73789a;
+    color:white;
+}
+
+
+.input{
+    width: 80%;
+    border:0;
+    padding:5px;
+    margin:4px 10px;
+    font-size:16px;
+}
+
+.counter {
+    display:inline-block;
+    background-color: steelblue;
+    color:white;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+ul.basket{
+    margin:0;
+    padding:0;
+}
+
+
+
+ul.basket li {
+    list-style: none;
+    background-color:#000030;
+    border-bottom:1px solid silver;
+    padding:8px 15px;
+}
+
+ul.basket li .item{
+    display: inline-block;
+    width:85%;
+}
+ul.basket li .actions{
+    display: inline-block;
+    width:10%;
+    color:#a00000;
+}
+
+.item.checked {
+    text-decoration: line-through;
+    color:#808080;
+    #opacity: 0.6;
+}
+
+#userBox {
+    top:0;
+    width:100%;
+    left:94%;
+    margin-right:12px;
+    position:absolute;
+    overflow:hidden;
+}
+#userBox.expanded{
+    left:0;
+    padding:6px;
+    background-color:silver;
+}
+
+@media screen and (min-width: 900px) {
+    .filters > *{
+        margin:0;
+        padding:6px 0;
+        font-size: 1em;
+        text-align: center;
+        display:inline-block;
+        width: 32%;
+    }
+
+    ul.basket li .item{
+        display: inline-block;
+        width:94%;
+        font-size: 1.4em;
+    }
+    ul.basket li .actions{
+        display: inline-block;
+        width:5%;
+        color:#a00000;
+    }
+    .input{
+        width: 92%;
+        border:0;
+        padding:5px;
+        margin:4px 10px;
+        font-size:1.3em;
+    }
+
 }

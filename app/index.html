@@ -1,20 +1,26 @@
 <html  ng-app='app'>
+<meta name="viewport" content="width=device-width">
     <head>
-        <title>{{title}}</title>
+
+        <title>Courses</title>
         <link rel="stylesheet" href="style/main.css">
     </head>
     
     <body>
-        <my-header>header</my-header>
 
         <ui-view></ui-view>
 
-        
+        <script src="components/rxjs/dist/rx.lite.min.js"></script>
+        <script src="components/jquery/dist/jquery.min.js"></script>
         <script src='components/angular/angular.min.js'></script>
         <script src='components/ui-router/release/angular-ui-router.min.js'></script>
+        <script src='components/firebase/firebase.js'></script>
+        <script src="components/lodash/lodash.min.js"></script>
+        <script src='components/angularfire/dist/angularfire.min.js'></script>
         <script src="app.js"></script>
         <script src="app.router.js"></script>
         <script src="header.js"></script>
+        <script src="basket.js"></script>
         
 
     </body>
