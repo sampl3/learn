@@ -1,6 +1,15 @@
 
 <h2>Home page</h2>
 <pre>Congratulations, you found my home page!</pre>
-{{5 + 2}}s
 
 <button ui-sref="p1">page 1</button>
+<button ui-sref="basket">basket</button>
+
+
+<hr>
+
+<div ng-controller="homeController as home">
+    {{home.message}}
+
+    <input ng-model="newValue"><button ng-click="home.setValue(newValue);newValue=''"> set</button>
+</div>

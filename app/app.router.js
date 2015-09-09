@@ -9,12 +9,10 @@ console.log('config');
     }).state('p1',{
         url: '/page1',
         templateUrl: 'views/p1.html'
-    }).state('users/:user',{
-        url: '/basket/:user',
-        templateUrl: 'views/basket.html',
-        controller: basketController,
-        controllerAs: 'basket'
+    }).state('basket',{
+        url: '/basket',
+        templateUrl: 'views/basket.html'
     });
 
-    $urlRouterProvider.otherwise('/basket/default');
+    $urlRouterProvider.otherwise('/basket');
 });
