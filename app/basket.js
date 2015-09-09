@@ -19,7 +19,7 @@ angular.module('app').directive('myBasket', function () {
         this.cancelUser = cancelUser;
 
 
-        basketService.subscribe(
+        var subscription = basketService.subscribe(
             function (x) {
                 console.log('svc next: ' + x);
             },
@@ -29,6 +29,10 @@ angular.module('app').directive('myBasket', function () {
             function () {
                 console.log('svc completed');
             });
+
+        $scsope.$on('$destroy', function () {
+            subscription.dispose();
+        });
 
 
         var data=this;

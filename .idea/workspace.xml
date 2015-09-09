@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d171218b-7cd0-420b-87c1-61e79fc61d93" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.router.js" afterPath="$PROJECT_DIR$/app/app.router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/basket.html" afterPath="$PROJECT_DIR$/app/views/basket.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/basket.js" afterPath="$PROJECT_DIR$/app/basket.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/basketService.js" afterPath="$PROJECT_DIR$/app/basketService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home.html" afterPath="$PROJECT_DIR$/app/views/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/myBasket.html" afterPath="$PROJECT_DIR$/app/views/myBasket.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="learn.iws" />
@@ -54,11 +47,11 @@
       <file leaf-file-name="basket.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/basket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8415493">
-              <caret line="149" column="35" selection-start-line="149" selection-start-column="35" selection-end-line="149" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.6971831">
+              <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
               <folding>
-                <element signature="e#58#3465#0" expanded="false" />
-                <marker date="1441773615006" expanded="true" signature="3597:3615" placeholder="..." />
+                <element signature="e#3641#4329#0" expanded="false" />
+                <marker date="1441773759426" expanded="true" signature="3711:3729" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -525,8 +518,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="147" column="5" selection-start-line="134" selection-start-column="8" selection-end-line="147" selection-end-column="5" />
           <folding>
-            <element signature="e#58#3465#0" expanded="false" />
-            <marker date="1441773615006" expanded="true" signature="3597:3615" placeholder="..." />
+            <element signature="e#3641#4329#0" expanded="false" />
+            <marker date="1441773759426" expanded="true" signature="3711:3729" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -633,8 +626,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
           <folding>
-            <element signature="e#58#3465#0" expanded="false" />
-            <marker date="1441773615006" expanded="true" signature="3597:3615" placeholder="..." />
+            <element signature="e#3641#4329#0" expanded="false" />
+            <marker date="1441773759426" expanded="true" signature="3711:3729" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -684,8 +677,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
           <folding>
-            <element signature="e#58#3465#0" expanded="false" />
-            <marker date="1441773615006" expanded="true" signature="3597:3615" placeholder="..." />
+            <element signature="e#3641#4329#0" expanded="false" />
+            <marker date="1441773759426" expanded="true" signature="3711:3729" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -897,11 +890,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/basket.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8415493">
-          <caret line="149" column="35" selection-start-line="149" selection-start-column="35" selection-end-line="149" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.6971831">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
           <folding>
-            <element signature="e#58#3465#0" expanded="false" />
-            <marker date="1441773615006" expanded="true" signature="3597:3615" placeholder="..." />
+            <element signature="e#3641#4329#0" expanded="false" />
+            <marker date="1441773759426" expanded="true" signature="3711:3729" placeholder="..." />
           </folding>
         </state>
       </provider>
