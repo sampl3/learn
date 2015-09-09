@@ -30,7 +30,7 @@ angular.module('app').directive('myBasket', function () {
                 console.log('svc completed');
             });
 
-        $scsope.$on('$destroy', function () {
+        $scope.$on('$destroy', function () {
             subscription.dispose();
         });
 
@@ -135,7 +135,7 @@ angular.module('app').directive('myConsole', function () {
         controllerAs: 'console'
     };
 
-    function myConsoleController(basketService) {
+    function myConsoleController(basketService, $scope) {
         var console = this;
 
 
@@ -150,7 +150,7 @@ angular.module('app').directive('myConsole', function () {
                 console.value = 'completed';
             });
 
-        $scsope.$on('$destroy', function () {
+        $scope.$on('$destroy', function () {
             subscription.dispose();
         });
     }

@@ -47,11 +47,10 @@
       <file leaf-file-name="basket.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/basket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6971831">
-              <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.34859154">
+              <caret line="137" column="54" selection-start-line="137" selection-start-column="54" selection-end-line="137" selection-end-column="54" />
               <folding>
-                <element signature="e#3641#4329#0" expanded="false" />
-                <marker date="1441773759426" expanded="true" signature="3711:3729" placeholder="..." />
+                <marker date="1441773971010" expanded="true" signature="3710:3728" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -518,8 +517,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="147" column="5" selection-start-line="134" selection-start-column="8" selection-end-line="147" selection-end-column="5" />
           <folding>
-            <element signature="e#3641#4329#0" expanded="false" />
-            <marker date="1441773759426" expanded="true" signature="3711:3729" placeholder="..." />
+            <marker date="1441773971010" expanded="true" signature="3710:3728" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -626,8 +624,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
           <folding>
-            <element signature="e#3641#4329#0" expanded="false" />
-            <marker date="1441773759426" expanded="true" signature="3711:3729" placeholder="..." />
+            <marker date="1441773971010" expanded="true" signature="3710:3728" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -677,8 +674,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
           <folding>
-            <element signature="e#3641#4329#0" expanded="false" />
-            <marker date="1441773759426" expanded="true" signature="3711:3729" placeholder="..." />
+            <marker date="1441773971010" expanded="true" signature="3710:3728" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -890,11 +886,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/basket.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6971831">
-          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.34859154">
+          <caret line="137" column="54" selection-start-line="137" selection-start-column="54" selection-end-line="137" selection-end-column="54" />
           <folding>
-            <element signature="e#3641#4329#0" expanded="false" />
-            <marker date="1441773759426" expanded="true" signature="3711:3729" placeholder="..." />
+            <marker date="1441773971010" expanded="true" signature="3710:3728" placeholder="..." />
           </folding>
         </state>
       </provider>
