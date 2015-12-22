@@ -1,7 +1,7 @@
 
 angular.module('app').service('basketService',basketService);
 
-function basketService($timeout){
+function basketService(){
     this.subscribe = subscribe;
     this.setValue = setValue;
 
@@ -10,14 +10,6 @@ function basketService($timeout){
 
 // Hide its type
     var source = subject.asObservable();
-
-    window.svc=this;
-    $timeout(function () {
-        setValue('timed out');
-    },4500);
-    $timeout(function () {
-        setValue('first');
-    },2000);
 
     ////////
 

@@ -126,32 +126,3 @@ angular.module('app').directive('myBasket', function () {
 
 });
 
-
-angular.module('app').directive('myConsole', function () {
-    return {
-        restrict: 'A',
-        template: '<span style="padding-right:12px">{{console.value}}</span>',
-        controller: myConsoleController,
-        controllerAs: 'console'
-    };
-
-    function myConsoleController(basketService, $scope) {
-        var console = this;
-
-
-        var subscription = basketService.subscribe(
-            function (x) {
-                console.value = x;
-            },
-            function (err) {
-                console.value = 'error ' + err;
-            },
-            function () {
-                console.value = 'completed';
-            });
-
-        $scope.$on('$destroy', function () {
-            subscription.dispose();
-        });
-    }
-});
