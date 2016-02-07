@@ -8,7 +8,7 @@ angular.module('app').directive('myBasket', function () {
         controllerAs: 'basket'
     };
 
-    function myBasketController($firebaseArray, $scope, $stateParams, basketService){
+    function myBasketController($firebaseArray, $scope, $state, $stateParams, $timeout, basketService){
 
         this.addItem = addItem;
         this.toggleItem = toggleItem;
@@ -17,39 +17,40 @@ angular.module('app').directive('myBasket', function () {
         this.getUser = getUser;
         this.setUser = setUser;
         this.cancelUser = cancelUser;
+        this.keydown = keyDown;
 
 
-        var subscription = basketService.subscribe(
-            function (x) {
-                console.log('svc next: ' + x);
-            },
-            function (err) {
-                console.log('svc error: ' + err);
-            },
-            function () {
-                console.log('svc completed');
-            });
+        // var subscription = basketService.subscribe(
+        //     function (x) {
+        //         console.log('svc next: ' + x);
+        //     },
+        //     function (err) {
+        //         console.log('svc error: ' + err);
+        //     },
+        //     function () {
+        //         console.log('svc completed');
+        //     });
 
-        $scope.$on('$destroy', function () {
-            subscription.dispose();
-        });
-
+        // $scope.$on('$destroy', function () {
+        //     subscription.dispose();
+        // });
 
         var data=this;
 
-        data.user = $stateParams.user ? $stateParams.user : 'default';
+        data.user = $stateParams.user ;
+        console.log('user',data.user);
         data.newUser = data.user;
 
         var db = new Firebase("https://flickering-fire-2385.firebaseio.com");
         var  activeItems, inactiveItems;
 
         data.filter="all";
-        listerUserData(data.user);
+        listenUserData(data.user);
 
 
         //////
 
-        function listerUserData(user){
+        function listenUserData(user){
             data.items = $firebaseArray(db.child('basket/' + user ));
 
             db.child('basket/' + user).on('value', function (ref) {
@@ -107,14 +108,16 @@ angular.module('app').directive('myBasket', function () {
         function getUser(){
             data.showUser = true;
             $timeout(function () {
-                $('#userBox input').focus();
+                $('#userBox input').select().focus();
             });
         }
 
         function setUser(){
             data.showUser= false;
-            data.user = data.newUser;
-            listerUserData(data.user);
+
+            $state.go('basket', {user:data.newUser});
+            // data.user = data.newUser;
+            // listerUserData(data.user);
         }
 
         function cancelUser(){
@@ -122,7 +125,17 @@ angular.module('app').directive('myBasket', function () {
             data.newUser = data.user;
         }
 
+        function keyDown(event) {
+          switch(event.keyCode) {
+            case 13:
+              setUser();
+              break;
+            case 27:
+              cancelUser();
+              break;
+          }
+        }
+
     }
 
 });
-

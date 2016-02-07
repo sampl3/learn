@@ -8,9 +8,9 @@ angular.module('app').config(function ($stateProvider, $urlRouterProvider)    {
         url: '/page1',
         templateUrl: 'views/p1.html'
     }).state('basket',{
-        url: '/basket',
+        url: '/basket/{user}',
         templateUrl: 'views/basket.html'
     });
 
-    $urlRouterProvider.otherwise('/basket');
+    $urlRouterProvider.otherwise('/basket/defaultUser');
 });
